@@ -12,7 +12,7 @@ In this assignment, you will build a web application that scrapes various websit
 
 4. Add your notebook files to this folder as well as your Flask app.
 
-5. Push the above changes to GitHub.
+5. Push the above changes to GitHub
 
 ## Instructions
 
