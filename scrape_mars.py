@@ -1,6 +1,7 @@
 from splinter import Browser
 from bs4 import BeautifulSoup
 from webdriver_manager.chrome import ChromeDriverManager
+import datetime as dt
 
 def scrape_all(browser):
     executable_path = {'executable_path': ChromeDriverManager().install()}
@@ -14,7 +15,9 @@ def scrape_all(browser):
         "newsTitle": news_title,
         "newsParagraph": news_paragraph,
         "featureImage": scrape_feature_img(browser),
-        "facts": scrape_facts_page(browser)
+        "facts": scrape_facts_page(browser),
+        "hemispheres": scrape_hemisphere(browser),
+        "lastUpdated": dt.datetime.now()
     }
     browser.quit()
 
@@ -77,7 +80,7 @@ def scrape_hemisphere(browser):
 
     hemisphere_image_url = []
 
-    for i in range(4)):
+    for i in range(4):
     
         hemisphereInfo={}
         
@@ -89,6 +92,8 @@ def scrape_hemisphere(browser):
         hemisphereInfo['title'] = browser.find_by_css('h2.title').text
         hemisphere_image_url.append(hemisphereInfo)
         browser.back()
+    
+    return hemisphere_image_url
     
 
 if __name__ == "__main__":
