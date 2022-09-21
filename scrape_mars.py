@@ -65,7 +65,6 @@ def scrape_facts_page(browser):
     url = 'https://galaxyfacts-mars.com/'
     browser.visit(url)
     html = browser.html
-    
     fact_soup = BeautifulSoup(html, 'html.parser')
     factsLocation = fact_soup.find('div', class_='diagram mt-4')
     factTable = factsLocation.find('table')
