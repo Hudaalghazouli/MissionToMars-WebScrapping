@@ -68,8 +68,9 @@ def scrape_facts_page(browser):
 
     fact_soup = BeautifulSoup(html, 'html.parser')
     factsLocation = fact_soup.find('div', class_='diagram mt-4')
-    
+
     factTable = factsLocation.find('table')
+    
     facts = ""
     facts += str(factTable)
 
