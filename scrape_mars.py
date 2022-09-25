@@ -59,7 +59,6 @@ def scrape_feature_img(browser):
 
     return image_url
 
-
 def scrape_facts_page(browser):
 
     url = 'https://galaxyfacts-mars.com/'
