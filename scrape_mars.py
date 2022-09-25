@@ -74,6 +74,8 @@ def scrape_facts_page(browser):
     return facts
 
 
+
+
 def scrape_hemisphere(browser):
     url = 'https://marshemispheres.com/'
     browser.visit(url)
