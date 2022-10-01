@@ -80,7 +80,7 @@ def scrape_hemisphere(browser):
 
     for i in range(4):
     
-    
+
         hemisphereInfo={}
         
         browser.find_by_css('a.product-item img')[i].click()
@@ -93,7 +93,6 @@ def scrape_hemisphere(browser):
         browser.back()
     
     return hemisphere_image_url
-    
 
 if __name__ == "__main__":
     print(scrape_all)
