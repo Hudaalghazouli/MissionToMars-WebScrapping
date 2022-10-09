@@ -20,9 +20,7 @@ def scrape_all(browser):
         "lastUpdated": dt.datetime.now()
     }
     browser.quit()
-
     return marsData
-
 
 
 def scrape_news(browser):
@@ -43,7 +41,6 @@ def scrape_news(browser):
     last_new_paragraph = last_new.find('div',class_='article_teaser_body').get_text()
 
     return last_new_text, last_new_paragraph
-
 
 
 def scrape_feature_img(browser):
@@ -80,7 +77,6 @@ def scrape_hemisphere(browser):
     hemisphere_image_url = []
 
     for i in range(4):
-    
 
         hemisphereInfo={}
         
