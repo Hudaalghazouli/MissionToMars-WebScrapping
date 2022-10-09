@@ -71,6 +71,7 @@ def scrape_facts_page(browser):
     facts += str(factTable)
 
     return facts
+    
 
 def scrape_hemisphere(browser):
     url = 'https://marshemispheres.com/'
@@ -97,4 +98,3 @@ def scrape_hemisphere(browser):
 if __name__ == "__main__":
     print(scrape_all)
 
-    
