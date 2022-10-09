@@ -97,3 +97,4 @@ def scrape_hemisphere(browser):
 
 if __name__ == "__main__":
     print(scrape_all)
+    
