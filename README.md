@@ -6,7 +6,6 @@ In this assignment, you will build a web application that scrapes various websit
 :
 :
 :
-:
 
 1. Create a new repository for this project called `web-scraping-challenge`. **Do not add this homework to an existing repository**
 
