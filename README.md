@@ -3,7 +3,7 @@
 In this assignment, you will build a web application that scrapes various websites for data related to the Mission to Mars and displays the information in a single HTML page. The following information outlines what you need to do
 
 ## Before You Begin
-Hfg
+Hf
 1. Create a new repository for this project called `web-scraping-challenge`. **Do not add this homework to an existing repository**
 
 2. Clone the new repository to your computer.
